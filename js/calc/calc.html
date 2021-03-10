@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="num">
+        <button class="btn">1</button>
+        <button class="btn">2</button>
+        <button class="btn">3</button>
+        <button class="btn">4</button>
+        <button class="btn">5</button>
+        <button class="btn">6</button>
+        <button class="btn">7</button>
+        <button class="btn">8</button>
+        <button class="btn">9</button>
+        <button class="btn">0</button>
+        <button class="btn">+</button>
+        <button class="btn">-</button>
+        <button class="btn">*</button>
+        <button class="btn">/</button>
+    </div>
+
+    <button class="rav">=</button>
+    
+
+
+    <script>
+        let num = document.querySelector('.num')
+        let result = document.querySelector('.rav') 
+        let btn = document.querySelectorAll('.btn')
+        let scrin = ''
+        num.addEventListener('click', (e)=>{
+            if(e.target.classList.contains('btn')) {
+            scrin += e.target.textContent
+            }
+        }) 
+
+        function calc(scrin){
+            let a = parseInt(scrin[0]);
+            let b = parseInt(scrin[2]);
+        if (scrin[1] === "+") {
+        return a + b;
+        } else  if (scrin[1] === "-") {
+            return a - b;
+        } else   if (scrin[1] === "*") {
+            return a * b;
+        } else   if (scrin[1] === "/") {
+            return a / b; 
+        }
+        }
+
+        result.addEventListener("click", (e) => {
+            console.log(calc(scrin));
+        })
+
+    </script>
+</body>
+</html>
