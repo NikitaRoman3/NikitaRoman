@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    li{
+        list-style-type: none;
+    }
+    a{
+        text-decoration: none;
+    }
+}
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+header{
+    height: 90px;
+    box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.15);
+    background-color: #ffffff;
+        .header__row{
+            display: flex;
+            justify-content: space-between;
+        }
+            .header__logo{
+                display: flex;
+                align-items: center;
+                padding: 27px 0 28px 0;
+            }
+            nav{
+                width: 531px;
+                padding: 40px 0 35px 0;
+                ul{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+                a{
+                    color: #777777;
+                    font-family: Roboto;
+                    font-size: 14px;
+                    font-weight: 700;
+                    line-height: 24px;
+                    text-transform: uppercase;
+                }
+                a:hover{
+                    color: #000000;
+                    text-decoration: underline;
+                }
+            }
+}
+section{   
+        background-color: #fafafa;
+        .section1{
+                background: url('../img/portfolio.png') no-repeat;
+                background-size: cover;
+                height: 350px;
+                opacity: 0.9;
+                .section1__title{
+                    display: flex;
+                    flex-direction: column;
+                    padding-top: 115px;
+                    h1{ 
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 540px;
+                        height: 56px;
+                        background-color: #000000;
+                        color: #ffffff;
+                        font-family: Roboto;
+                        font-size: 48px;
+                        font-weight: 300;
+                        line-height: 24px;
+                        text-transform: uppercase;
+                        letter-spacing: 4.8px;
+                    }
+                    h3{
+                        color: #000000;
+                        font-family: Roboto;
+                        font-size: 18px;
+                        font-weight: 300;;
+                        line-height: 24px;
+                        text-transform: uppercase;
+                        letter-spacing: 7.2px;
+                        padding: 38px 0 0 0;
+                    }
+                }
+        }      
+        .section2{
+            padding-top: 33px;
+            .top_line{
+                width: 1140px;
+                height: 1px;
+                background-color: #e1e1e1;
+            }
+            menu{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 26px 0 22px 0;
+                ul{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+                li{
+                    padding: 0 17px 0 17px;
+                }
+                a{
+                    color: #777777;
+                    font-family: Roboto;
+                    font-size: 14px;
+                    font-weight: 700;
+                    line-height: 24px;
+                    letter-spacing: 1.05px;
+                    text-align: center;
+                    text-transform: uppercase;
+                }
+                a:hover{
+                    color: #000000;
+                    text-decoration: underline;
+                    }
+            }
+        }
+        .gallery{
+            display: flex;
+            justify-content: center;
+            padding-top: 29px;
+            .gallery__left{
+                display: flex;
+                flex-direction: column;
+                img{
+                    padding-bottom: 34px;
+                }
+            }
+            .gallery__center{
+                display: flex;
+                flex-direction: column;
+                img{
+                    padding: 0 30px 35px 30px
+                }
+            }
+            .gallery__right{
+                display: flex;
+                flex-direction: column;
+                img{
+                    padding: 0 0 35px 0;
+                }
+            }
+            
+        }
+        .button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 36px 0 73px 0;
+            .bth{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 125px;
+                height: 30px;
+                background-color: #959595;
+                a{
+                    color: #ffffff;
+                    font-family: Roboto;
+                    font-size: 13px;
+                    font-weight: 700;
+                    line-height: 20.57px;
+                    text-transform: uppercase;
+                    letter-spacing: 0.76px;
+                }
+            }
+        }
+}
+footer{
+    background-color: #ffffff;
+    .footer__logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 64px 0 44px 0;
+    }
+    .footer__social{
+            width: 100%;
+            height: 63px;
+            border: 1px solid #ebebeb;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    }
+    .footer__info{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 37px 0 47px 0;
+            h3{
+                color: #9c9c9c;
+                font-family: Roboto;
+                font-size: 13px;
+                font-weight: 400;
+                line-height: 26px;
+                text-transform: uppercase;
+            }
+                span{
+                    color: #000000;
+                    letter-spacing: 0.33px;
+                }
+    }
+}
